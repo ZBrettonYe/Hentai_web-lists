@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="zh-cmn-Hans">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="keywords" content="绅士导航，老司机，福利，神器">
 	<meta name="description" content="绅士导航-老司机的百科全书">
-	<title>绅士导航</title>
-	<link rel="stylesheet" type="text/css" href="../css/hexagons.css">
+<title>绅士导航</title>
+	<link href="../../assets/css/hexagons.css" rel="stylesheet">
+	<link href="../../assets/css/spop.css" rel="stylesheet">
 </head>
 
-<body background="../img/bg.jpeg">
-	<a href="../index.html">
-		<img src="../img/logo.png" alt="绅士导航" width="25%" title="返回主页" />
-	</a>
+<body background="../../img/bg.jpeg">
+	<img src="../../img/logo.png" alt="绅士导航" width="25%" />
+	<div class="wrap">
+		<input type="checkbox" id="checking" style="display:none;" />
+		<button class="blob" onClick="addFavorite()"><i class="fas fa-star"></i></button>
+		<button class="blob"><a href="https://github.com/ZBrettonYe" target="_blank" ><i class="fab fa-github"></i></a></button>
+		<button class="blob"><a href="https://jq.qq.com/?_wv=1027&k=5yoVRpD" target="_blank"><i class="fab fa-qq"></i></a></button>
+		<button class="blob" onClick="mail()"><i class="fas fa-envelope"></i></button>
+		<button class="blob"><a href="../../"><i class="fas fa-home"></i></a></button>
+		<button class="blob"><a href="https://t.me/hentaiwold" target="_blank"><i class="fab fa-telegram-plane"></i></a></button>
+		<button class="blob"><a href="https://www.tumblr.com/blog/hentaiworld233" target="_blank"><i class="fab fa-tumblr"></i></a></button>
+		<button class="blob" onClick="sub_wechat()"><i class="fab fa-weixin"></i></button>
+		<label class="blob" for="checking"> 
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</label>
+	</div>
+	<svg>
+		<defs>
+			<filter id="filt">
+				<fegaussianblur in="SourceGraphic" result="blur" stdDeviation="10" />
+				<fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+				<feblend in2="filt" in="SourceGraphic" result="mix" />
+			</filter>
+		</defs>
+	</svg>
 	<div class="sub_header">
 		<p>国内</p>
 	</div>
@@ -22,14 +45,14 @@
 		<ul class="hexGrid" >
 			<li class="hex">
 				<a class="hexIn" href="http://93.t9p.today/" target="_blank">
-					<img src="../icon/icon_1.jpg" alt="" />
+					<img src="../../icon/icon_1.jpg" alt="" />
 					<h1>91porn</h1>
 					<p>国内知名18X自拍论坛</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="http://www.rrluav.com/?fromuid=1503941" target="_blank">
-					<img src="../icon/icon_2.jpg" alt="" />
+					<img src="../../icon/icon_2.jpg" alt="" />
 					<h1>色AV吧</h1>
 					<p>连续7年全国撸量遥遥领先JJ连起来可绕地球一圈，每日更新多种类型电影图片和小说激情你懂得！</p>
 				</a>
@@ -43,129 +66,140 @@
 		<ul class="hexGrid">
 			<li class="hex">
 				<a class="hexIn" href="https://www.pornhub.com/" target="_blank">
-					<img src="../icon/icon_3.jpg" alt="" />
+					<img src="../../icon/icon_3.jpg" alt="" />
 					<h1>Pornhub</h1>
 					<p>世界顶级网站排行榜第34名，一个加拿大的色情影片分享网站。世界上三大色情网站之一。它是目前网上最大的色情影片网站，服务分享遍及全球</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.redtube.com/" target="_blank">
-					<img src="../icon/icon_10.jpg" alt="" />
+					<img src="../../icon/icon_10.jpg" alt="" />
 					<h1>RedTube</h1>
 					<p>一个色情影片分享网站。世界上三大色情网站之一。其在2009年11月Alexa排名中跻身全球头100个访问量最多的网站</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.youporn.com/" target="_blank">
-					<img src="../icon/icon_15.jpg" alt="" />
+					<img src="../../icon/icon_15.jpg" alt="" />
 					<h1>YouPorn</h1>
 					<p>世界上三大色情网站之一。它于2006年8月开始营运后，成为当年最热门的免费色情网站，2007年11月被誉为互联网上最大的免费色情网站</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="http://www.xvideos.com/" target="_blank">
-					<img src="../icon/icon_16.jpg" alt="" />
+					<img src="../../icon/icon_16.jpg" alt="" />
 					<h1>XVideos</h1>
 					<p>世界顶级网站排行榜第42名，世界上受欢迎的成人影片分享网站</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://xhamster.com/" target="_blank">
-					<img src="../icon/icon_7.jpg" alt="" />
+					<img src="../../icon/icon_7.jpg" alt="" />
 					<h1>Xhamster</h1>
 					<p>世界顶级网站排行榜第74名，免费色情影片分享网站</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.xtube.com/" target="_blank">
-					<img src="../icon/icon_17.jpg" alt="" />
+					<img src="../../icon/icon_17.jpg" alt="" />
 					<h1>Xtube</h1>
 					<p>第一家成人视频共享网站，位于荷兰的色情影片分享网站。它允许用户与其他用户分享成人影视作品</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.txxx.com/" target="_blank">
-					<img src="../icon/icon_18.jpg" alt="" />
+					<img src="../../icon/icon_18.jpg" alt="" />
 					<h1>TXXX</h1>
 					<p>世界顶级网站排行榜第90名</p>
 				</a>
 			</li>
 			<li class="hex">
+				<a class="hexIn" href="https://www.youjizz.com/" target="_blank">
+					<img src="../../icon/icon_18.jpg" alt="" />
+					<h1>TXXX</h1>
+					<p>国外知名免费在线18X视频</p>
+				</a>
+			</li>
+			<li class="hex">
 				<a class="hexIn" href="http://www.xnxx.com/" target="_blank">
-					<img src="../icon/icon_19.jpg" alt="" />
+					<img src="../../icon/icon_19.jpg" alt="" />
 					<h1>XNXX</h1>
 					<p>世界顶级网站排行榜第93名，源自波兰。界面有机翻中文。</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.porntube.com/" target="_blank">
-					<img src="../icon/icon_4.jpg" alt="" />
+					<img src="../../icon/icon_4.jpg" alt="" />
 					<h1>Porntube</h1>
 					<p>一个依靠广告运作的色情网站，免费提供露骨性行为的声音，影视以及照片</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.eporner.com/" target="_blank">
-					<img src="../icon/icon_5.jpg" alt="" />
+					<img src="../../icon/icon_5.jpg" alt="" />
 					<h1>Eporner</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.pornhd.com/" target="_blank">
-					<img src="../icon/icon_6.jpg" alt="" />
+					<img src="../../icon/icon_6.jpg" alt="" />
 					<h1>PornHD</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="http://motherless.com/" target="_blank">
-					<img src="../icon/icon_8.jpg" alt="" />
+					<img src="../../icon/icon_8.jpg" alt="" />
 					<h1>Motherless</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.gotporn.com/" target="_blank">
-					<img src="../icon/icon_9.jpg" alt="" />
+					<img src="../../icon/icon_9.jpg" alt="" />
 					<h1>Gotporn</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="https://www.4tube.com/" target="_blank">
-					<img src="../icon/icon_11.jpg" alt="" />
+					<img src="../../icon/icon_11.jpg" alt="" />
 					<h1>4Tube</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="http://vtrahesite.porn/" target="_blank">
-					<img src="../icon/icon_12.jpg" alt="" />
+					<img src="../../icon/icon_12.jpg" alt="" />
 					<h1>Vtrahevip</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="http://www.porno666.com/" target="_blank">
-					<img src="../icon/icon_13.jpg" alt="" />
+					<img src="../../icon/icon_13.jpg" alt="" />
 					<h1>Prono666</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 			<li class="hex">
 				<a class="hexIn" href="http://www.poimel.info/" target="_blank">
-					<img src="../icon/icon_14.jpg" alt="" />
+					<img src="../../icon/icon_14.jpg" alt="" />
 					<h1>poimel</h1>
 					<p>国外知名免费在线18X视频</p>
 				</a>
 			</li>
 		</ul>
 	</div>
-	<footer id="footer">
-		<ul class="copyright">	<a href="http://www.hentaiworld.cc/">&copy;绅士遥望塔</a>
+		<footer id="footer">
+		<ul class="copyright"><a href="https://jq.qq.com/?_wv=1027&k=5yoVRpD" target="_blank">&copy;绅士世界</a>
 		</ul>
 	</footer>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script type="text/javascript" src="../../assets/js/main.js"></script>
+	<script type="text/javascript" src="../../assets/js/topbar.js"></script>
+	<script type="text/javascript" src="../../assets/js/spop.js"></script>
 </body>
-
 </html>
+	

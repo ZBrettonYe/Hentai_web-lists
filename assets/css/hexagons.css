@@ -3,18 +3,23 @@
     padding: 0 auto;
 	font-family: "Lato",Helvetica,sans-serif;
 }
+
+button a{
+	color:currentColor;
+}
+
 #logo{
-	margin: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
 	float: left;
 	position: relative;
 }
 footer{
-	position: absolute;
+	position: relative;
 	bottom:10px;
 	display:block；
 }
 body{
-	margin: 10px;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -249,10 +254,12 @@ body{
         font-size: 13px;
     }
 }
-
+#footer{
+	color: grey;
+}
 #footer a{
 	color: grey;
-	outline-style: dotted;
+	outline-style: none;
 	text-decoration: none;
 }
 
@@ -271,9 +278,8 @@ body{
 
 /*** Menu  **********************************************************************/
 .bar {
-	top:20px;
 	display:block;
-	width:40px;
+	width:50px;
 	height:5px;
 	margin:5px auto;
 	background-color:#fff;
@@ -285,15 +291,12 @@ body{
 	-ms-transition:all 0.4s linear 0.1s;
 }
 .bar:first-child {
-	margin-top:27px;
+	margin-top:22px;
 }
 .wrap {
-	position:absolute;
-	top:50px;
-	left: 90%;
-	margin:auto;
-	width:150px;
-	height:100px;
+	position:fixed;
+	top:20px;
+	right: 35px;
 	z-index:10;
 	transform:rotate(90deg);
 	filter:url("../index.html/#filt");
@@ -301,12 +304,11 @@ body{
 }
 .wrap .blob {
 	position:inherit;
-	display:block;
 	cursor:pointer;
 	border:none;
 	outline:none;
-	width:80px;
-	height:80px;
+	width:70px;
+	height:70px;
 	border-radius:50%;
 	background-color:#F44336;
 	transform:rotate(-90deg);
@@ -317,8 +319,6 @@ body{
 	-ms-box-shadow:0 0 10px 1px rgba(255,255,255,0.3) inset;
 }
 .wrap .blob[for="checking"] {
-	z-index:30;
-	font-size:60px;
 	text-align:center;
 	color:#fff;
 	transition:transform 0.5s ease-in-out 0.2s;
@@ -328,10 +328,10 @@ body{
 	-ms-transition:transform 0.5s ease-in-out 0.2s;
 }
 .wrap .blob:not([for="checking"]) {
+	top:5px;
+	left:5px;
 	width: 50px;
   	height: 50px;
-	top: 15px;
-  	left: 15px;
 	font-size:30px;
 	transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
@@ -394,7 +394,7 @@ body{
 	-o-transform:rotate(45deg);
 	-ms-transform:rotate(45deg);
 	transform:rotate(45deg);
-	margin-top:37px;
+	margin-top:35px;
 }
 .wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(2) {
 	-webkit-transform:rotate(-45deg);
