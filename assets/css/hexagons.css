@@ -269,10 +269,10 @@ body{
 }
 
 .sub_header {
-	font-size: 42px;
+	font-size: 38px;
 	color: white;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 5px;
 
 }
 
@@ -294,7 +294,7 @@ body{
 	margin-top:22px;
 }
 .wrap {
-	position:fixed;
+	position:absolute;
 	top:20px;
 	right: 35px;
 	z-index:10;
